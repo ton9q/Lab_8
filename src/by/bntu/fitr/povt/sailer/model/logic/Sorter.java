@@ -2,7 +2,7 @@ package by.bntu.fitr.povt.sailer.model.logic;
 
 import by.bntu.fitr.povt.sailer.model.entity.Carriage;
 import by.bntu.fitr.povt.sailer.model.entity.container.Train;
-import by.bntu.fitr.povt.sailer.model.services.TrainService;
+import by.bntu.fitr.povt.sailer.util.services.TrainService;
 
 public class Sorter {
 

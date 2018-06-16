@@ -1,6 +1,7 @@
-.idea
-out
+.idea/
+out/
 *.xml
-*class
+*.class
 *.iml
 *.jar
+*.txt

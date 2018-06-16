@@ -2,6 +2,8 @@ package by.bntu.fitr.povt.sailer.model.entity.container;
 
 import by.bntu.fitr.povt.sailer.model.entity.Carriage;
 
+import java.util.Arrays;
+
 public class Train {
     private static final int DEFAULT_SIZE = 3;
     private Carriage[] carriages;
@@ -53,6 +55,25 @@ public class Train {
             carriages[i] = carriages[i + 1];
             carriages[i + 1] = null;
         }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Train train = (Train) o;
+
+        if (size != train.size) return false;
+        // Probably incorrect - comparing Object[] arrays with Arrays.equals
+        return Arrays.equals(carriages, train.carriages);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Arrays.hashCode(carriages);
+        result = 31 * result + size;
+        return result;
     }
 
     @Override

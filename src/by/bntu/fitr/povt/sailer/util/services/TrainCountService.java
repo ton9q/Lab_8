@@ -1,4 +1,4 @@
-package by.bntu.fitr.povt.sailer.model.services;
+package by.bntu.fitr.povt.sailer.util.services;
 
 import by.bntu.fitr.povt.sailer.model.entity.container.Train;
 import by.bntu.fitr.povt.sailer.model.entity.PassengerCarriage;

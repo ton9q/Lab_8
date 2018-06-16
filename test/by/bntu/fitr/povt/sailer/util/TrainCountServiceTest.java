@@ -1,4 +1,4 @@
-//package by.bntu.fitr.povt.sailer.model.services;
+//package by.bntu.fitr.povt.sailer.util.services;
 //
 //import org.junit.Test;
 //

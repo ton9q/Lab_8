@@ -28,6 +28,26 @@ public class CargoCarriage extends Carriage {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+
+        CargoCarriage that = (CargoCarriage) o;
+
+        if (volume != that.volume) return false;
+        return capacity == that.capacity;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = super.hashCode();
+        result = 31 * result + volume;
+        result = 31 * result + capacity;
+        return result;
+    }
+
+    @Override
     public String toString() {
         return "CargoCarriage{" +
                 "volume=" + volume +
