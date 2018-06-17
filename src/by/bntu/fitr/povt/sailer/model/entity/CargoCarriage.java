@@ -5,8 +5,8 @@ public class CargoCarriage extends Carriage {
     private int volume;
     private int capacity;
 
-    public CargoCarriage(double length, int weight, int volume, int capacity, boolean wear) {
-        super(length,weight,wear);
+    public CargoCarriage(double length, int weight, boolean wear, int volume, int capacity) {
+        super(length, weight, wear);
         this.volume = volume;
         this.capacity = capacity;
     }

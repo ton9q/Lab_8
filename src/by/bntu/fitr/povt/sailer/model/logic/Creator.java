@@ -19,11 +19,15 @@ public class Creator {
         return new Carriage(len, weight, wear);
     }
 
-    public static Carriage createPassengerCarriage(int len, int weight, int number, boolean wear) {
-        return new PassengerCarriage(len, weight, number, wear);
+    public static Carriage createPassengerCarriage(int len, int weight, boolean wear) {
+        return new PassengerCarriage(len, weight, wear);
     }
 
-    public static Carriage createCargoCarriage(int len, int weight, int volume, int capacity, boolean wear) {
-        return new CargoCarriage(len, weight, volume, capacity, wear);
+    public static Carriage createPassengerCarriage(int len, int weight, boolean wear, String typeCarriage) {
+        return new PassengerCarriage(len, weight, wear, typeCarriage);
+    }
+
+    public static Carriage createCargoCarriage(int len, int weight, boolean wear, int volume, int capacity) {
+        return new CargoCarriage(len, weight, wear, volume, capacity);
     }
 }
